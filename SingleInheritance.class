@@ -1,0 +1,22 @@
+// Parent class
+class Person {
+    void displayInfo() {
+        System.out.println("This is Diksha, a person.");
+    }
+}
+
+// Child class inheriting from Person
+class Student extends Person {
+    void showStudy() {
+        System.out.println("Diksha is studying Java.");
+    }
+}
+
+// Main class
+public class SingleInheritance {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.displayInfo();  // Method from parent class
+        s.showStudy();    // Method from child class
+    }
+}
